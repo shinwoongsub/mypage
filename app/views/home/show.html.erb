@@ -1,0 +1,7 @@
+<h1><%= @post.title %></h1>
+<p>마지막 수정일자 <%= @post.updated_at.strftime("%Y/%m/%d") %></p>
+<p><%= @post.contents %></p>
+
+<a href="/home/index">목록으로</a>
+<a href="/edit/<%= @post.id %>">수정하기</a>
+<a href="/destroy/<%= @post.id %>">삭제하기</a>
